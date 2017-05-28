@@ -5,7 +5,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   color: #111;
-  background: url('images/background.png') #edeff0;
+  background: url('svgs/background.svg') #edeff0;
 }
 
 #container {
@@ -42,13 +42,51 @@ header {
     margin-right: 20px;
   }
 
-  header nav ul li a img {
-    height: 13px;
-  }
+  /*svg icnos stylings*/
+   .nav-icon {
+      height: 13px;
+      overflow: visible;
+   }
+
+  .heart,
+  .location,
+  .contact {
+     fill: #39ADD1;
+     transition: transform .8s;
+     transform-origin: 50% 50%;
+ }
+
+ /*nav hover styling*/
+   header nav ul li:hover a{
+      color: tomato;
+   }
+
+    header nav ul li:hover .heart,
+    header nav ul li:hover .location,
+    header nav ul li:hover .contact{
+      fill: tomato;
+      transform: scale(1.5);
+   }
 
   header h1 {
     line-height: 1em;
   }
+
+.logo {
+   width: 140px;
+   height: 120px;
+}
+
+.logo__text--svg {
+   opacity: 0;
+}
+
+.logo__text--mobile {
+   text-transform: uppercase;
+   font-size: 1.5em;
+   color: #eaaa7f;
+   margin-bottom: 0;
+}
 
 main {
   padding-top: 50px;
@@ -74,9 +112,78 @@ main {
         margin-right: 0;
       }
 
+   .dogs-list__dog__img {
+      width: 170px;
+      height: 170px;
+   }
+
+/*gods svg images styling*/
+/*husky*/
+.husky__ear,
+.husky__head {
+   fill: black;
+}
+
+.husky__eye {
+   fill: #39ADD1;
+}
+
+.husky__face,
+.husky__brow {
+   fill: white;
+}
+
+/*shepherd*/
+.shepherd__head {
+   fill: #dda161;
+}
+
+.shepherd__nose {
+   fill: #ECACCE;
+}
+
+/*akita*/
+.akita__ear,
+.akita__head {
+   fill: #D58E36;
+}
+
+.akita__face {
+   fill: white;
+}
+
+.akita__nose,
+.akita__eye,
+.akita__brow {
+   fill: black;
+}
+
+/*labrador*/
+.labrador__ear,
+.labrador__face,
+.labrador__eye  {
+   fill: #0a0604;
+}
+
+.labrador__head,
+.labrador__nose {
+   fill: #47362E;
+}
+
 footer {
   width: 100%;
   margin-top: 100px;
   padding-bottom: 30px;
   color: #ba8058;
+}
+
+/*======================= Media queries========================*/
+@media (min-width: 425px) {
+   .logo__text--svg {
+      opacity: 1;
+   }
+
+   .logo__text--mobile {
+      display: none;
+   }
 }
