@@ -5,7 +5,7 @@ One of 12 **_Front End Web Development_** projects at [Treehouse Techdegree Cour
 ## Project Desription
 In this project I replaced the rasterized images and modernized the UI using the SVGs.
 
-## Screenshot
+## Screenshots
 ![creenshot of the website](https://raw.githubusercontent.com/dmitriyaa/storage/master/screenshot--techdegree-project-6.png)
 
 Here is a [link](https://dmitriyaa.github.io/techdegree-project-6) to live demo.
